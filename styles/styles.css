@@ -90,13 +90,7 @@
     backdrop-filter: blur(8px);
 }
 
-.skill-pill {
-    transition: all 0.2s ease;
-}
 
-.skill-pill:hover {
-    transform: scale(1.05);
-}
 
 .timeline-dot::before {
     content: '';
@@ -218,4 +212,14 @@
 #contact .shadow-lg:hover {
     transform: translateY(-5px); /* Slightly lift the box on hover */
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Add a more pronounced shadow */
+}
+
+/* Hover effect for the Education card */
+.bg-gray-50.dark\:bg-gray-700 {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.bg-gray-50.dark\:bg-gray-700:hover {
+    transform: translateY(-10px); /* Lifts the card slightly */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Adds a subtle shadow */
 }
