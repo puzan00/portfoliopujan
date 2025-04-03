@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* Custom animations and styles */
 @keyframes fadeIn {
     from { opacity: 0; }
