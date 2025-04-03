@@ -1,6 +1,4 @@
-html {
-    scroll-behavior: smooth;
-}
+
 
 /* Custom animations and styles */
 @keyframes fadeIn {
@@ -157,12 +155,38 @@ html {
 .bg-blur {
     backdrop-filter: blur(8px);
 }
-.skill-pill {
+.bg-blue-100,
+.bg-blue-900 {
     transition: all 0.2s ease;
 }
-.skill-pill:hover {
-    transform: scale(1.05);
+
+.bg-blue-100:hover,
+.bg-blue-900:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
 }
+
+/* Hover effect for soft skills */
+.bg-purple-100,
+.bg-purple-900 {
+    transition: all 0.2s ease;
+}
+
+.bg-purple-100:hover,
+.bg-purple-900:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+.shadow-md {
+    transition: all 0.3s ease;
+}
+
+.shadow-md:hover {
+    transform: translateY(-5px); /* Slightly lift the card on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Add a more pronounced shadow */
+}
+
 .timeline-dot::before {
     content: '';
     position: absolute;
@@ -174,12 +198,24 @@ html {
     z-index: -1;
 }
 
-/* Back to top button */
-#backToTop {
-    opacity: 0;
-    transition: opacity 0.3s;
+/* Hover effect for contact information box */
+#contact .bg-white,
+#contact .bg-gray-700 {
+    transition: all 0.3s ease;
 }
 
-#backToTop.show {
-    opacity: 1;
+#contact .bg-white:hover,
+#contact .bg-gray-700:hover {
+    transform: translateY(-5px); /* Slightly lift the box on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Hover effect for form box */
+#contact .shadow-lg {
+    transition: all 0.3s ease;
+}
+
+#contact .shadow-lg:hover {
+    transform: translateY(-5px); /* Slightly lift the box on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Add a more pronounced shadow */
 }
